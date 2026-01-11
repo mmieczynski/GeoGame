@@ -32,7 +32,7 @@ const Task: React.FC<CongratsProps> = ({ onTaskFinished, taskText }) => {
   return (
     <>
       <Grid container justifyContent="center" alignContent="center" spacing={5}>
-        <Grid item marginBottom={10}>
+        <Grid size="auto" marginBottom={10}>
           <Typography
             align="left"
             sx={{ lineHeight: 1.6, letterSpacing: 2, fontSize: "28px" }}
@@ -40,12 +40,12 @@ const Task: React.FC<CongratsProps> = ({ onTaskFinished, taskText }) => {
             {taskText}
           </Typography>
         </Grid>
-        <Grid item>
+        <Grid size="auto">
           <Typography variant="h6">
             Kliknij kiedy zadanie zostało wykonane:
           </Typography>
         </Grid>
-        <Grid item>
+        <Grid size="auto">
           <Button onClick={handleOpen} variant="contained">
             Zrobione!
           </Button>
@@ -59,13 +59,13 @@ const Task: React.FC<CongratsProps> = ({ onTaskFinished, taskText }) => {
             flexDirection="column"
             spacing={1}
           >
-            <Grid item alignSelf="end" sx={{ margin: 1 }}>
+            <Grid size="auto" alignSelf="end" sx={{ margin: 1 }}>
               <IconButton onClick={handleClose}>
                 <CloseIcon />
               </IconButton>
             </Grid>
             <Grid
-              item
+              size="auto"
               sx={{
                 marginLeft: 4,
                 marginRight: 4,

@@ -48,13 +48,13 @@ const App: React.FC = () => {
       {!codeCorrect ? (
         <>
           <Grid container flexDirection="column" spacing={5}>
-            <Grid item>
+            <Grid size="auto">
               <Typography variant="h3">Hej!</Typography>
             </Grid>
-            <Grid item>
+            <Grid size="auto">
               <Typography variant="h6">Wpisz otrzymany kod poniżej:</Typography>
             </Grid>
-            <Grid item>
+            <Grid size="auto">
               <TextField
                 variant="filled"
                 label="Twój kod"
@@ -62,7 +62,7 @@ const App: React.FC = () => {
                 value={code}
               />
             </Grid>
-            <Grid item>
+            <Grid size="auto">
               <Button
                 variant="contained"
                 endIcon={<PlayCircleOutlineIcon />}

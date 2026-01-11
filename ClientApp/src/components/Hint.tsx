@@ -54,13 +54,13 @@ const Hint: React.FC<HintProps> = ({ hint, name, type, location }) => {
             flexDirection="column"
             spacing={1}
           >
-            <Grid item alignSelf="end" sx={{ margin: 1 }}>
+            <Grid size="auto" alignSelf="end" sx={{ margin: 1 }}>
               <IconButton onClick={handleClose}>
                 <CloseIcon />
               </IconButton>
             </Grid>
             <Grid
-              item
+              size="auto"
               sx={{
                 marginLeft: 4,
                 marginRight: 4,
