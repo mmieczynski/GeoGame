@@ -89,7 +89,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
           Podpowiedzi:
         </Typography>
         <Grid container spacing={3} flexDirection="row">
-          <Grid size="grow" flexBasis={0} flexGrow={1} flexShrink={1}>
+          <Grid size="grow">
             <Hint
               hint={taskData.smallHint}
               name="Mała"
@@ -97,7 +97,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
               location={taskData.location}
             />
           </Grid>
-          <Grid size="grow" flexBasis={0} flexGrow={1} flexShrink={1}>
+          <Grid size="grow">
             <Hint
               hint={taskData.bigHint}
               name="Duża"
@@ -105,7 +105,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
               location={taskData.location}
             />
           </Grid>
-          <Grid size="grow" flexBasis={0} flexGrow={1} flexShrink={1}>
+          <Grid size="grow">
             <Hint
               hint="Ten budynek jest cały czarny oraz jest pokryty prawie w całości z okien."
               name="Kierunek"
@@ -113,7 +113,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
               location={taskData.location}
             />
           </Grid>
-          <Grid size="grow" flexBasis={0} flexGrow={1} flexShrink={1}>
+          <Grid size="grow">
             <Hint
               hint="Ten budynek jest cały czarny oraz jest pokryty prawie w całości z okien."
               name="Dystans"
