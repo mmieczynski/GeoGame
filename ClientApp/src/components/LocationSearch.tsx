@@ -60,7 +60,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
 
   return (
     <>
-      <Grid item>
+      <Grid size="auto">
         <Typography
           // variant="h4"
           align="left"
@@ -69,7 +69,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
           {taskData.mainHint}
         </Typography>
       </Grid>
-      <Grid item alignSelf="flex-start">
+      <Grid size="auto" alignSelf="flex-start">
         <Button
           variant="text"
           color="primary"
@@ -79,7 +79,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
           Dotknij aby sprawdzić czy jesteś na miejscu.
         </Button>
       </Grid>
-      <Grid item>
+      <Grid size="auto">
         <Typography
           variant="h6"
           align="left"
@@ -89,7 +89,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
           Podpowiedzi:
         </Typography>
         <Grid container spacing={3} flexDirection="row">
-          <Grid item flexBasis={0} flexGrow={1} flexShrink={1}>
+          <Grid size="grow">
             <Hint
               hint={taskData.smallHint}
               name="Mała"
@@ -97,7 +97,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
               location={taskData.location}
             />
           </Grid>
-          <Grid item flexBasis={0} flexGrow={1} flexShrink={1}>
+          <Grid size="grow">
             <Hint
               hint={taskData.bigHint}
               name="Duża"
@@ -105,7 +105,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
               location={taskData.location}
             />
           </Grid>
-          <Grid item flexBasis={0} flexGrow={1} flexShrink={1}>
+          <Grid size="grow">
             <Hint
               hint="Ten budynek jest cały czarny oraz jest pokryty prawie w całości z okien."
               name="Kierunek"
@@ -113,7 +113,7 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
               location={taskData.location}
             />
           </Grid>
-          <Grid item flexBasis={0} flexGrow={1} flexShrink={1}>
+          <Grid size="grow">
             <Hint
               hint="Ten budynek jest cały czarny oraz jest pokryty prawie w całości z okien."
               name="Dystans"
@@ -131,13 +131,13 @@ const LocationSearch: React.FC<LocationSearchProps> = ({
             flexDirection="column"
             spacing={1}
           >
-            <Grid item alignSelf="end" sx={{ margin: 1 }}>
+            <Grid size="auto" alignSelf="end" sx={{ margin: 1 }}>
               <IconButton onClick={handleClose}>
                 <CloseIcon />
               </IconButton>
             </Grid>
             <Grid
-              item
+              size="auto"
               sx={{
                 marginLeft: 4,
                 marginRight: 4,

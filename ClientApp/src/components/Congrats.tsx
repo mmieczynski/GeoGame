@@ -11,7 +11,7 @@ interface CongratsProps {
 const Congrats: React.FC<CongratsProps> = ({ onShowTask }) => {
   return (
     <Grid container justifyContent="center" alignContent="center" spacing={5}>
-      <Grid item>
+      <Grid size="auto">
         <Typography variant="h4">Gratulacje! Miejsce znalezione!</Typography>{" "}
       </Grid>
       {Number(localStorage.getItem("taskNumber")) % 2 === 0 ? (
@@ -20,12 +20,12 @@ const Congrats: React.FC<CongratsProps> = ({ onShowTask }) => {
         <ReactConfetti />
       )}
 
-      <Grid item>
+      <Grid size="auto">
         <Typography variant="h6">
           Kliknij na poniższy przycisk aby wyświetlić zadanie:
         </Typography>
       </Grid>
-      <Grid item>
+      <Grid size="auto">
         <Button onClick={onShowTask} variant="contained">
           Wyświetl zadanie
         </Button>
